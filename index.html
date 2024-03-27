@@ -32,43 +32,27 @@
       background-color: #151515;
       height: auto;
       width: 450px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .title {
       font-family: "Big Shoulders Display";
       font-size: 96px;
-      position: absolute;
+      font-weight: 900;
       font-size: 60px;
-      color: white;
-      background-clip: text;
-
-      /* Create the gradient. */
-      background-image: linear-gradient(90deg, white 65%, #151515 40%);
-      /* Use the text as a mask for the background. */
-      /* This will show the gradient as a text color rather than element bg. */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      left: 295px;
-      top: 175px;
+      color: #151515;
     }
 
     .call-to-action {
       font-family: "Outfit", sans-serif;
       font-weight: 100;
       line-height: 28px;
-      position: relative;
       display: flex;
-      justify-content: center;
       align-items: center;
-      right: 64px;
-      bottom: 45px;
       width: 200px;
     }
 
     button {
+      font-family: "Outfit", sans-serif;
       color: white;
       background: linear-gradient(90deg, #151515 82%, #d5966c 30%);
       padding: 15px;
@@ -78,16 +62,71 @@
     button:hover {
       background: linear-gradient(90deg, #d5966c 82%, #151515 30%);
     }
+
+    @media only screen and (min-width: 1000px) and (max-width: 3000px) {
+      #mobile {
+        display: none;
+      }
+      .title {
+        position: absolute;
+        background-clip: text;
+        background-image: linear-gradient(90deg, white 65%, #151515 40%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        left: 269px;
+        top: 175px;
+      }
+
+      .call-to-action {
+        position: relative;
+        right: 64px;
+        bottom: 55px;
+      }
+    }
+
+    @media only screen and (min-width: 376px) and (max-width: 999px) {
+      #desktop {
+        display: none;
+      }
+      body {
+        display: block;
+      }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width: 375px) {
+      #desktop {
+        display: none;
+      }
+      body {
+        display: block;
+      }
+      .panel {
+        display: none;
+      }
+      .title {
+        color: #151515;
+        left: 0;
+        top: 0;
+        position: none;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .call-to-action {
+        right: 0px;
+        bottom: 0px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+      }
+    }
   </style>
   <body>
-    <div class="panel">
-      <h1 class="title">
-        MODERN <br />
-        ART GALLERY
-      </h1>
+    <div class="panel"></div>
+    <img id="desktop" src="./assets/desktop/image-hero.jpg" alt="hero" />
+    <img id="mobile" src="./assets/mobile/image-hero.jpg" alt="hero" />
+    <div class="title">
+      MODERN <br />
+      ART GALLERY
     </div>
-    <img src="./assets/desktop/image-hero.jpg" alt="hero" />
-
     <div class="call-to-action">
       <div>
         <div>
