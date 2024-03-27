@@ -83,7 +83,7 @@
       margin-top: 100px;
     }
 
-    .main-imgage-margin {
+    .main-image-margin {
       margin-right: 10px;
     }
 
@@ -170,6 +170,10 @@
       #desktop-grid-1 {
         display: none;
       }
+
+      #desktop-grid-2 {
+        display: none;
+      }
       .header {
         display: block;
       }
@@ -189,6 +193,20 @@
         bottom: 0px;
         margin-left: 10px;
         margin-bottom: 40px;
+      }
+      .row {
+        display: block;
+      }
+
+      .row2 {
+        display: block;
+        margin: 0;
+      }
+
+      footer {
+        display: block;
+        justify-content: center;
+        width: 100%;
       }
     }
   </style>
@@ -215,6 +233,11 @@
     <div class="main-section">
       <div class="row">
         <div>
+          <img
+            id="mobile-grid-1"
+            src="./assets/mobile/image-grid-1.jpg"
+            alt="hero"
+          />
           <div class="main-title">
             YOUR DAY AT <br />
             THE GALLERY
@@ -230,16 +253,11 @@
             src="./assets/desktop/image-grid-1.jpg"
             alt="hero"
           />
-          <img
-            id="mobile-grid-1"
-            src="./assets/mobile/image-grid-1.jpg"
-            alt="hero"
-          />
         </div>
       </div>
       <div class="row2">
         <img
-          class="main-imgage-margin"
+          class="main-image-margin"
           id="desktop-grid-2"
           src="./assets/desktop/image-grid-2.jpg"
           alt="hero"
@@ -274,13 +292,14 @@
         ART GALLERY
       </div>
       <div>
-        The Modern Art Gallery is free to all visitors and open <br/> seven days a
-        week from 8am to 9pm. Find us at 99 <br/> King Street, Newport, USA
+        The Modern Art Gallery is free to all visitors and open <br />
+        seven days a week from 8am to 9pm. Find us at 99 <br />
+        King Street, Newport, USA
       </div>
       <div>
-        <img id="desktop-hero" src="./assets/icon-facebook.svg" alt="hero" />
-        <img id="desktop-hero" src="./assets/icon-instagram.svg" alt="hero" />
-        <img id="desktop-hero" src="./assets/icon-twitter.svg" alt="hero" />
+        <img src="./assets/icon-facebook.svg" alt="hero" />
+        <img src="./assets/icon-instagram.svg" alt="hero" />
+        <img src="./assets/icon-twitter.svg" alt="hero" />
       </div>
     </footer>
   </body>
