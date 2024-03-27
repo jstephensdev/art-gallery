@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Art gallery website</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+    }
+    .panel {
+      background-color: #151515;
+      height: auto;
+      width: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      font-family: "Big Shoulders Display";
+      font-size: 96px;
+      position: absolute;
+      font-size: 60px;
+      color: white;
+      background-clip: text;
+
+      /* Create the gradient. */
+      background-image: linear-gradient(90deg, white 65%, #151515 40%);
+      /* Use the text as a mask for the background. */
+      /* This will show the gradient as a text color rather than element bg. */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      left: 295px;
+      top: 175px;
+    }
+
+    .call-to-action {
+      font-family: "Outfit", sans-serif;
+      font-weight: 100;
+      line-height: 28px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 64px;
+      bottom: 45px;
+      width: 200px;
+    }
+
+    button {
+      color: white;
+      background: linear-gradient(90deg, #151515 82%, #d5966c 30%);
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #d5966c 82%, #151515 30%);
+    }
+  </style>
+  <body>
+    <div class="panel">
+      <h1 class="title">
+        MODERN <br />
+        ART GALLERY
+      </h1>
+    </div>
+    <img src="./assets/desktop/image-hero.jpg" alt="hero" />
+
+    <div class="call-to-action">
+      <div>
+        <div>
+          The arts in the collection of the Modern Art Gallery all started from
+          a spark of inspiration. Will these pieces inspire you? Visit us and
+          find out.
+        </div>
+        <button>OUR LOCATION ></button>
+      </div>
+    </div>
+    <!-- Modern Art Gallery
+
+  The arts in the collection of the Modern Art Gallery all started 
+  from a spark of inspiration. Will these pieces inspire you? Visit 
+  us and find out.
+
+  Our location
+
+  Your day at the gallery
+
+  Wander through our distinct collections and find new insights about 
+  our artists. Dive into the details of their creative process.
+
+  Come &amp; be inspired
+
+  We’re excited to welcome you to our gallery and see how our collections 
+  influence you.
+
+  Modern Art Gallery
+
+  The Modern Art Gallery is free to all visitors and open seven days a week 
+  from 8am to 9pm. Find us at 99 King Street, Newport, USA. -->
+  </body>
+</html>
