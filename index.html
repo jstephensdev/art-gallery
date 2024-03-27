@@ -57,19 +57,21 @@
 
     .main-section {
       margin-top: 100px;
+      margin-left: 162px;
     }
 
     .main-section-text {
       font-family: "Outfit", sans-serif;
-      font-weight: 400;
+      font-weight: 100;
       line-height: 28px;
-      width: 200px;
+      width: 300px;
     }
 
     .main-title {
       font-family: "Big Shoulders Display";
       font-size: 70px;
       line-height: 70px;
+      margin: 0;
     }
 
     .row {
@@ -80,7 +82,7 @@
     .row2 {
       display: flex;
       margin-left: 90px;
-      margin-top: 100px;
+      margin-top: 10px;
     }
 
     .main-image-margin {
@@ -92,7 +94,23 @@
       height: 377px;
       width: 405px;
     }
+    
+    .footer-title {
+      font-family: "Big Shoulders Display";
+      font-size: 36px;
+      line-height: 36px;
+    }
 
+    .footer-text {
+      font-family: "Outfit", sans-serif;
+      font-weight: 100;
+      line-height: 28px;
+      width: 400px;
+    }
+
+    .footer-space {
+      margin-top: 15px;
+    }
     footer {
       display: flex;
       justify-content: space-evenly;
@@ -136,6 +154,10 @@
       #mobile-grid-2 {
         display: none;
       }
+
+      #mobile-grid-3 {
+        display: none;
+      }
       .title {
         position: absolute;
         background-clip: text;
@@ -174,10 +196,14 @@
       #desktop-grid-2 {
         display: none;
       }
+
+      #desktop-grid-3 {
+        display: none;
+      }
       .header {
         display: block;
       }
-      .panel {
+      .dark-panel {
         display: none;
       }
       .title {
@@ -193,6 +219,7 @@
         bottom: 0px;
         margin-left: 10px;
         margin-bottom: 40px;
+        width: 89%;
       }
       .row {
         display: block;
@@ -203,10 +230,26 @@
         margin: 0;
       }
 
+      .main-section {
+        margin-left: 15px;
+      }
+
+      .main-section-text {
+        width: 80%;
+      }
+
+      .main-panel {
+        width: auto;
+        margin-right: 15px;;
+      }
+
+      .footer-text {
+        width: auto;
+      }
+
       footer {
         display: block;
         justify-content: center;
-        width: 100%;
       }
     }
   </style>
@@ -215,10 +258,10 @@
       <div class="dark-panel"></div>
       <img id="desktop-hero" src="./assets/desktop/image-hero.jpg" alt="hero" />
       <img id="mobile-hero" src="./assets/mobile/image-hero.jpg" alt="hero" />
-      <div class="title">
+      <h1 class="title">
         MODERN <br />
         ART GALLERY
-      </div>
+      </h1>
       <div class="call-to-action">
         <div>
           <div>
@@ -238,10 +281,10 @@
             src="./assets/mobile/image-grid-1.jpg"
             alt="hero"
           />
-          <div class="main-title">
+          <h2 class="main-title">
             YOUR DAY AT <br />
             THE GALLERY
-          </div>
+          </h2>
           <p class="main-section-text">
             Wander through our distinct collections and find new insights about
             our artists. Dive into the details of their creative process.
@@ -269,8 +312,13 @@
         />
         <div>
           <img
-            id="desktop"
+            id="desktop-grid-3"
             src="./assets/desktop/image-grid-3.jpg"
+            alt="hero"
+          />
+          <img
+            id="mobile-grid-3"
+            src="./assets/mobile/image-grid-3.jpg"
             alt="hero"
           />
           <div class="dark-panel main-panel">
@@ -287,19 +335,19 @@
       </div>
     </div>
     <footer>
-      <div>
+      <div class="footer-title">
         MODERN <br />
         ART GALLERY
       </div>
-      <div>
-        The Modern Art Gallery is free to all visitors and open <br />
-        seven days a week from 8am to 9pm. Find us at 99 <br />
+      <div class="footer-text footer-space">
+        The Modern Art Gallery is free to all visitors and open 
+        seven days a week from 8am to 9pm. Find us at 99 
         King Street, Newport, USA
       </div>
-      <div>
-        <img src="./assets/icon-facebook.svg" alt="hero" />
-        <img src="./assets/icon-instagram.svg" alt="hero" />
-        <img src="./assets/icon-twitter.svg" alt="hero" />
+      <div class="footer-space">
+        <img src="./assets/icon-facebook.svg" alt="facebook" />
+        <img src="./assets/icon-instagram.svg" alt="instagram" />
+        <img src="./assets/icon-twitter.svg" alt="twitter" />
       </div>
     </footer>
   </body>
