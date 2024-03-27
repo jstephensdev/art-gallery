@@ -25,13 +25,17 @@
   </head>
   <style>
     body {
-      display: flex;
+      display: block;
       margin: 0;
     }
-    .panel {
+    .header {
+      display: flex;
+    }
+    .dark-panel {
       background-color: #151515;
       height: auto;
       width: 450px;
+      color: white;
     }
 
     .title {
@@ -49,6 +53,54 @@
       display: flex;
       align-items: center;
       width: 200px;
+    }
+
+    .main-section {
+      margin-top: 100px;
+    }
+
+    .main-section-text {
+      font-family: "Outfit", sans-serif;
+      font-weight: 400;
+      line-height: 28px;
+      width: 200px;
+    }
+
+    .main-title {
+      font-family: "Big Shoulders Display";
+      font-size: 70px;
+      line-height: 70px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .row2 {
+      display: flex;
+      margin-left: 90px;
+      margin-top: 100px;
+    }
+
+    .main-imgage-margin {
+      margin-right: 10px;
+    }
+
+    .main-panel {
+      padding: 20px;
+      height: 377px;
+      width: 405px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 100px;
+      background: #151515;
+      color: white;
+      padding: 50px;
     }
 
     button {
@@ -73,7 +125,15 @@
     }
 
     @media only screen and (min-width: 1000px) and (max-width: 3000px) {
-      #mobile {
+      #mobile-hero {
+        display: none;
+      }
+
+      #mobile-grid-1 {
+        display: none;
+      }
+
+      #mobile-grid-2 {
         display: none;
       }
       .title {
@@ -94,7 +154,7 @@
     }
 
     @media only screen and (min-width: 376px) and (max-width: 999px) {
-      #desktop {
+      #desktop-hero {
         display: none;
       }
       body {
@@ -103,10 +163,14 @@
     }
 
     @media only screen and (min-width: 300px) and (max-width: 375px) {
-      #desktop {
+      #desktop-hero {
         display: none;
       }
-      body {
+
+      #desktop-grid-1 {
+        display: none;
+      }
+      .header {
         display: block;
       }
       .panel {
@@ -129,22 +193,95 @@
     }
   </style>
   <body>
-    <div class="panel"></div>
-    <img id="desktop" src="./assets/desktop/image-hero.jpg" alt="hero" />
-    <img id="mobile" src="./assets/mobile/image-hero.jpg" alt="hero" />
-    <div class="title">
-      MODERN <br />
-      ART GALLERY
-    </div>
-    <div class="call-to-action">
-      <div>
+    <div class="header">
+      <div class="dark-panel"></div>
+      <img id="desktop-hero" src="./assets/desktop/image-hero.jpg" alt="hero" />
+      <img id="mobile-hero" src="./assets/mobile/image-hero.jpg" alt="hero" />
+      <div class="title">
+        MODERN <br />
+        ART GALLERY
+      </div>
+      <div class="call-to-action">
         <div>
-          The arts in the collection of the Modern Art Gallery all started from
-          a spark of inspiration. Will these pieces inspire you? Visit us and
-          find out.
+          <div>
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit us
+            and find out.
+          </div>
+          <button>OUR LOCATION</button>
         </div>
-        <button>OUR LOCATION</button>
       </div>
     </div>
+    <div class="main-section">
+      <div class="row">
+        <div>
+          <div class="main-title">
+            YOUR DAY AT <br />
+            THE GALLERY
+          </div>
+          <p class="main-section-text">
+            Wander through our distinct collections and find new insights about
+            our artists. Dive into the details of their creative process.
+          </p>
+        </div>
+        <div>
+          <img
+            id="desktop-grid-1"
+            src="./assets/desktop/image-grid-1.jpg"
+            alt="hero"
+          />
+          <img
+            id="mobile-grid-1"
+            src="./assets/mobile/image-grid-1.jpg"
+            alt="hero"
+          />
+        </div>
+      </div>
+      <div class="row2">
+        <img
+          class="main-imgage-margin"
+          id="desktop-grid-2"
+          src="./assets/desktop/image-grid-2.jpg"
+          alt="hero"
+        />
+        <img
+          id="mobile-grid-2"
+          src="./assets/mobile/image-grid-2.jpg"
+          alt="hero"
+        />
+        <div>
+          <img
+            id="desktop"
+            src="./assets/desktop/image-grid-3.jpg"
+            alt="hero"
+          />
+          <div class="dark-panel main-panel">
+            <div class="main-title">
+              COME & BE <br />
+              INSPIRED
+            </div>
+            <div class="main-section-text">
+              We're exicited to welcome you to our gallery and see how our
+              collections influence you.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        MODERN <br />
+        ART GALLERY
+      </div>
+      <div>
+        The Modern Art Gallery is free to all visitors and open <br/> seven days a
+        week from 8am to 9pm. Find us at 99 <br/> King Street, Newport, USA
+      </div>
+      <div>
+        <img id="desktop-hero" src="./assets/icon-facebook.svg" alt="hero" />
+        <img id="desktop-hero" src="./assets/icon-instagram.svg" alt="hero" />
+        <img id="desktop-hero" src="./assets/icon-twitter.svg" alt="hero" />
+      </div>
+    </footer>
   </body>
 </html>
