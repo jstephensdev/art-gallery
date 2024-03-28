@@ -31,14 +31,14 @@
     .header {
       display: flex;
     }
-    .dark-panel {
+    .hero-panel {
       background-color: #151515;
       height: auto;
       width: 450px;
       color: white;
     }
 
-    .title {
+    .hero-title {
       font-family: "Big Shoulders Display";
       font-size: 96px;
       font-weight: 900;
@@ -46,7 +46,7 @@
       color: #151515;
     }
 
-    .call-to-action {
+    .hero-call-to-action {
       font-family: "Outfit", sans-serif;
       font-weight: 100;
       line-height: 28px;
@@ -73,12 +73,12 @@
       margin: 0;
     }
 
-    .row {
+    .main-row-1 {
       display: flex;
       justify-content: space-evenly;
     }
 
-    .row2 {
+    .main-row-2 {
       display: flex;
       justify-content: center;
       margin-top: 10px;
@@ -89,11 +89,13 @@
     }
 
     .main-panel {
+      background-color: #151515;
+      color: white;
       padding: 20px;
       height: 377px;
       width: 405px;
     }
-    
+
     .footer-title {
       font-family: "Big Shoulders Display";
       font-size: 36px;
@@ -110,6 +112,7 @@
     .footer-space {
       margin-top: 15px;
     }
+
     footer {
       display: flex;
       justify-content: space-evenly;
@@ -132,6 +135,7 @@
       padding-right: 15px;
       margin-top: 30px;
     }
+
     button::after {
       content: url(./assets/icon-arrow-right.svg);
       margin-left: 35px;
@@ -157,7 +161,8 @@
       #mobile-grid-3 {
         display: none;
       }
-      .title {
+
+      .hero-title {
         position: absolute;
         background-clip: text;
         background-image: linear-gradient(90deg, white 65%, #151515 40%);
@@ -167,14 +172,14 @@
         top: 175px;
       }
 
-      .call-to-action {
+      .hero-call-to-action {
         position: relative;
         right: 64px;
         bottom: 55px;
       }
     }
 
-    @media only screen and (min-width: 376px) and (max-width: 999px) {
+    @media only screen and (min-width: 481px) and (max-width: 999px) {
       #desktop-hero {
         display: none;
       }
@@ -183,7 +188,7 @@
       }
     }
 
-    @media only screen and (min-width: 300px) and (max-width: 375px) {
+    @media only screen and (min-width: 300px) and (max-width: 480px) {
       #desktop-hero {
         display: none;
       }
@@ -199,13 +204,16 @@
       #desktop-grid-3 {
         display: none;
       }
+
       .header {
         display: block;
       }
-      .dark-panel {
+
+      .hero-panel {
         display: none;
       }
-      .title {
+
+      .hero-title {
         color: #151515;
         left: 0;
         top: 0;
@@ -213,18 +221,19 @@
         margin-left: 10px;
         margin-bottom: 10px;
       }
-      .call-to-action {
+
+      .hero-call-to-action {
         right: 0px;
         bottom: 0px;
         margin-left: 10px;
         margin-bottom: 40px;
         width: 89%;
       }
-      .row {
+      .main-row-1 {
         display: block;
       }
 
-      .row2 {
+      .main-row-2 {
         display: block;
         margin: 0;
       }
@@ -239,7 +248,6 @@
 
       .main-panel {
         width: auto;
-        margin-right: 15px;;
       }
 
       .footer-text {
@@ -254,14 +262,22 @@
   </style>
   <body>
     <div class="header">
-      <div class="dark-panel"></div>
-      <img id="desktop-hero" src="./assets/desktop/image-hero.jpg" alt="hero" />
-      <img id="mobile-hero" src="./assets/mobile/image-hero.jpg" alt="hero" />
-      <h1 class="title">
+      <div class="hero-panel"></div>
+      <img
+        id="desktop-hero"
+        src="./assets/desktop/image-hero.jpg"
+        alt="two people looking at a woman wearing glasses art piece"
+      />
+      <img
+        id="mobile-hero"
+        src="./assets/mobile/image-hero.jpg"
+        alt="two people looking at a woman wearing glasses art piece"
+      />
+      <h1 class="hero-title">
         MODERN <br />
         ART GALLERY
       </h1>
-      <div class="call-to-action">
+      <div class="hero-call-to-action">
         <div>
           <div>
             The arts in the collection of the Modern Art Gallery all started
@@ -273,12 +289,12 @@
       </div>
     </div>
     <div class="main-section">
-      <div class="row">
+      <div class="main-row-1">
         <div>
           <img
             id="mobile-grid-1"
             src="./assets/mobile/image-grid-1.jpg"
-            alt="hero"
+            alt="room with several art pieces on the walls"
           />
           <h2 class="main-title">
             YOUR DAY AT <br />
@@ -293,34 +309,34 @@
           <img
             id="desktop-grid-1"
             src="./assets/desktop/image-grid-1.jpg"
-            alt="hero"
+            alt="room with several art pieces on the walls"
           />
         </div>
       </div>
-      <div class="row2">
+      <div class="main-row-2">
         <img
           class="main-image-margin"
           id="desktop-grid-2"
           src="./assets/desktop/image-grid-2.jpg"
-          alt="hero"
+          alt="room with bench and an art piece on the wall"
         />
         <img
           id="mobile-grid-2"
           src="./assets/mobile/image-grid-2.jpg"
-          alt="hero"
+          alt="room with bench and an art piece on the wall"
         />
         <div>
           <img
             id="desktop-grid-3"
             src="./assets/desktop/image-grid-3.jpg"
-            alt="hero"
+            alt="a few people looking at art pieces"
           />
           <img
             id="mobile-grid-3"
             src="./assets/mobile/image-grid-3.jpg"
-            alt="hero"
+            alt="a few people looking at art pieces"
           />
-          <div class="dark-panel main-panel">
+          <div class="main-panel">
             <h3 class="main-title">
               COME & BE <br />
               INSPIRED
@@ -339,9 +355,8 @@
         ART GALLERY
       </h4>
       <p class="footer-text footer-space">
-        The Modern Art Gallery is free to all visitors and open 
-        seven days a week from 8am to 9pm. Find us at 99 
-        King Street, Newport, USA
+        The Modern Art Gallery is free to all visitors and open seven days a
+        week from 8am to 9pm. Find us at 99 King Street, Newport, USA
       </p>
       <div class="footer-space">
         <img src="./assets/icon-facebook.svg" alt="facebook" />
