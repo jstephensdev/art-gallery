@@ -27,9 +27,11 @@
     body {
       margin: 0;
     }
+
     .header {
       display: flex;
     }
+
     .hero-panel {
       background-color: #151515;
       height: auto;
@@ -55,7 +57,22 @@
     }
 
     .main-section {
-      margin-top: 50px;
+      display: flex;
+      flex: wrap;
+      justify-content: center;
+      flex-direction: column;
+      margin: 100px auto;
+      max-width: 1440px;
+    }
+
+    .main-title {
+      font-family: "Big Shoulders Display";
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 700;
+      margin: 0;
+      max-width: 300px;
+      padding-top: 40px;
     }
 
     .main-section-text {
@@ -66,16 +83,11 @@
       width: 300px;
     }
 
-    .main-title {
-      font-family: "Big Shoulders Display";
-      font-size: 70px;
-      line-height: 70px;
-      margin: 0;
-    }
-
     .main-row-1 {
       display: flex;
+      margin: 0;
       justify-content: space-evenly;
+      padding-bottom: 20px;
     }
 
     .main-row-2 {
@@ -84,15 +96,15 @@
     }
 
     .main-row-2-image-margin {
-      margin-right: 10px;
+      margin-right: 20px;
     }
 
     .main-panel {
       background-color: #151515;
       color: white;
-      padding: 20px;
-      height: 323px;
-      padding: 40px;
+      margin-top: 20px;
+      padding-bottom: 121px;
+      padding-left: 40px;
     }
 
     .footer-title {
