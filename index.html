@@ -28,7 +28,7 @@
       margin: 0;
     }
 
-    .header {
+    .hero {
       display: flex;
     }
 
@@ -205,7 +205,21 @@
         display: none;
       }
 
-      .header {
+      #mobile-grid-1 {
+        width: 100%;
+        padding-top: 40px;
+      }
+
+      #mobile-grid-2 {
+        width: 100%;
+      }
+
+      #mobile-grid-3 {
+        width: 100%;
+        padding-top: 20px;
+      }
+
+      .hero {
         display: flex;
         flex-direction: column;
       }
@@ -216,8 +230,7 @@
 
       .hero-title {
         color: #151515;
-        left: 0;
-        top: 0;
+        padding: 0 20px;
         font-size: 60px;
         line-height: 50px;
         position: none;
@@ -225,21 +238,25 @@
       }
 
       .hero-call-to-action {
-        right: 0px;
-        bottom: 0px;
+        padding: 0 20px;
         margin-bottom: 40px;
-        width: 89%;
+        width: auto;
       }
+
+      .main-title {
+        font-size: 60px;
+        line-height: 50px;
+        max-width: 250px;
+      }
+
       .main-row-1 {
         display: flex;
         flex-direction: column;
-        justify-content: center;
       }
 
       .main-row-2 {
         display: flex;
         flex-direction: column;
-        margin: 10px;
       }
 
       .main-section {
@@ -249,11 +266,11 @@
       }
 
       .main-section-text {
-        width: 80%;
+        width: auto;
       }
 
       .main-panel {
-        width: 265px;
+        width: auto;
       }
 
       .footer-text {
@@ -261,7 +278,8 @@
       }
 
       .container {
-        display: block;
+        display: flex;
+        flex-direction: column;
       }
 
       footer {
@@ -271,17 +289,17 @@
   </style>
   <body>
     <div class="container">
-      <section class="header">
+      <section class="hero">
         <div class="hero-panel"></div>
         <img
           id="desktop-hero"
           src="./assets/desktop/image-hero.jpg"
-          alt="two people looking at a woman wearing glasses art piece"
+          alt="two people looking at a person wearing glasses art piece"
         />
         <img
           id="mobile-hero"
           src="./assets/mobile/image-hero.jpg"
-          alt="two people looking at a woman wearing glasses art piece"
+          alt="two people looking at a person wearing glasses art piece"
         />
         <h1 class="hero-title">
           MODERN <br />
@@ -332,24 +350,24 @@
               class="main-row-2-image-margin"
               id="desktop-grid-2"
               src="./assets/desktop/image-grid-2.jpg"
-              alt="room with bench and an art piece on the wall"
+              alt="room in art gallery with bench and an art piece on the wall"
             />
             <img
               id="mobile-grid-2"
               src="./assets/mobile/image-grid-2.jpg"
-              alt="room with bench and an art piece on the wall"
+              alt="room in art gallery with bench and an art piece on the wall"
             />
           </div>
           <div>
             <img
               id="desktop-grid-3"
               src="./assets/desktop/image-grid-3.jpg"
-              alt="a few people looking at art pieces"
+              alt="a few people at the gallery looking at art pieces"
             />
             <img
               id="mobile-grid-3"
               src="./assets/mobile/image-grid-3.jpg"
-              alt="a few people looking at art pieces"
+              alt="a few people at the gallery looking at art pieces"
             />
             <div class="main-panel">
               <h3 class="main-title">
